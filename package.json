@@ -1,0 +1,12 @@
+{
+    "name": "ampmod-setup-runner",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "start": "bash ./deploy.sh",
+      "dev": "concurrently \"cd ampmod && npm run dev\" \"cd ampmod-web-front && npm run dev\""
+    },
+    "devDependencies": {
+      "concurrently": "^9.0.0"
+    }
+}
