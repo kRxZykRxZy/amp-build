@@ -8,7 +8,7 @@ if [ ! -d "ampmod" ]; then
 
 cd ampmod
 npm install
-npm run ci-build
+npm run build
 cd ..
 
   # Clone ampmod-web-front if not present
