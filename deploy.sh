@@ -11,4 +11,12 @@ npm install
 npm run build
 cd ..
 
-  # Clone ampmod-web-front if not 
+  # Clone ampmod-web-front if not present
+if [ ! -d "ampmod-web-front" ]; then
+  git clone https://github.com/ampmod/ampmod-web-front.git
+fi
+
+cd ampmod-web-front
+npm install
+npm run build
+cd ..
