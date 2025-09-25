@@ -4,9 +4,9 @@ set -e
 # Always fresh clone/build ampmod
 rm -rf ampmod
 git clone https://codeberg.org/ampmod/ampmod
-cd ampmod/packages/gui
+cd ampmod
 npm install
-npm run build
+npm run ci-build
 cd ..
 
 # Always fresh clone/build aw3
