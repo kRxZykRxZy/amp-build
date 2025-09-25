@@ -1,5 +1,5 @@
 {
-    "name": "ampmod-setup-runner",
+    "name": "ampmod-deployer",
     "version": "1.0.0",
     "private": true,
     "scripts": {
