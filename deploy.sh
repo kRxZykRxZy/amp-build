@@ -11,7 +11,7 @@ cd ..
 
 # Always fresh clone/build aw3
 rm -rf aw3
-git clone https://github.com/ampmod/aw3.git
+git clone https://codeberg.org/ampmod/aw3.git
 cd aw3
 npm install
 npm run build
