@@ -1,22 +1,28 @@
 #!/bin/bash
 set -e
 
-# Clone ampmod if not present
-if [ ! -d "ampmod" ]; then
-  git clone https://codeberg.org/ampmod/ampmod
-  fi
-
-cd ampmod
+# Always fresh clone/build ampmod
+rm -rf ampmod
+git clone https://codeberg.org/ampmod/ampmod
+cd ampmod/packages/gui
 npm install
 npm run build
 cd ..
 
-  # Clone ampmod-web-front if not present
-if [ ! -d "ampmod-web-front" ]; then
-  git clone https://github.com/ampmod/ampmod-web-front.git
-fi
-
-cd ampmod-web-front
+# Always fresh clone/build aw3
+rm -rf aw3
+git clone https://github.com/ampmod/aw3.git
+cd aw3
 npm install
 npm run build
 cd ..
+
+# Clean final dist folder
+rm -rf final_dist
+mkdir final_dist
+
+# Copy ampmod build first
+cp -r ampmod/packages/gui/build* final_dist/   # adjust if it's dist/ instead of build/
+
+# Copy aw3 build afterwards, overwriting duplicates
+cp -r aw3/dist/* final_dist/      # adjust if it's dist/ instead of build/
