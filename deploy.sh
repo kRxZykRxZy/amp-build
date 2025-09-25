@@ -25,4 +25,4 @@ mkdir final_dist
 cp -r ampmod/packages/gui/build* final_dist/   # adjust if it's dist/ instead of build/
 
 # Copy aw3 build afterwards, overwriting duplicates
-cp -r aw3/build* final_dist/      # adjust if it's dist/ instead of build/
+cp -r aw3/build final_dist/      # adjust if it's dist/ instead of build/
