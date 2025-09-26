@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-      "start": "bash ./deploy.sh",
-      "dev": "concurrently \"cd ampmod && npm run dev\" \"cd ampmod-web-front && npm run dev\""
+      "start": "sh index.sh",
+      "dev": "npm start && concurrently \"cd deploy/data/ampmod && npm run dev\" \"cd deploy/data/aw3 && npm run dev\""
     },
     "devDependencies": {
       "concurrently": "^9.0.0"
