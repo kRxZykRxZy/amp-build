@@ -1,3 +1,4 @@
+cd aw3
 echo "(Aw3) Installing Dependencies..."
 npm install
 # Is This How Aw3 Builds? Please Can You Fix If Wrong (8to16)
