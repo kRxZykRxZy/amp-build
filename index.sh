@@ -3,7 +3,7 @@ pwd
 sh deploy/aw3/build.sh
 pwd
 mkdir aw3/temp
-pwf
+pwd
 cp -R aw3/build aw3/temp
 pwd
 sh deploy/ampmod/clone.sh
