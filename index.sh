@@ -4,4 +4,4 @@ cp -R ampmod/packages/gui/build /amp-build
 sh deploy/aw3/clone.sh
 sh deploy/aw3/build.sh
 pwd
-cp -R build /amp-build
+cp -R /aw3/build /amp-build
