@@ -2,6 +2,7 @@ name: Sync from Codeberg
 
 on:
   workflow_dispatch:
+  push:
   schedule:
     - cron: "* * * * *" # runs daily at midnight (UTC)
 
@@ -26,7 +27,7 @@ jobs:
 
       - name: Clone Codeberg repo
         run: |
-          git clone --depth=1 https://codeberg.org/ampmod/ampmod-deployer temp-src
+          git clone --depth=1 https://codeberg.org/ampmod-web/ampmod-deployer temp-src
           cp -r temp-src/* .
           rm -rf temp-src
 
