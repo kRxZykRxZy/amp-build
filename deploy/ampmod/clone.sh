@@ -1,1 +1,1 @@
-git clone https://codeberg.org/ampmod-web/editor
+git clone https://codeberg.org/ampmod-web/editor ampmod
