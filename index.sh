@@ -8,7 +8,6 @@ sh deploy/ampmod/build.sh
 pwd
 cp -R ampmod/packages/gui/build aw3/temp
 pwd
-cp -R aw3/temp aw3/build/build
-pwd
 sh deploy/aw3/build.sh
 pwd
+cp -R aw3/temp aw3/build/build
